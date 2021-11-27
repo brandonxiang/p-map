@@ -10,13 +10,15 @@
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
 	},
+	"main": "dist/p-map.js",
 	"type": "module",
 	"exports": "./index.js",
 	"engines": {
 		"node": ">=12"
 	},
 	"scripts": {
-		"test": "xo && ava && tsd"
+		"test": "xo && ava && tsd",
+		"build": "bundt index.js"
 	},
 	"files": [
 		"index.js",
@@ -50,6 +52,7 @@
 		"random-int": "^3.0.0",
 		"time-span": "^5.0.0",
 		"tsd": "^0.14.0",
-		"xo": "^0.38.2"
+		"xo": "^0.38.2",
+		"bundt": "^1.1.5"
 	}
 }
